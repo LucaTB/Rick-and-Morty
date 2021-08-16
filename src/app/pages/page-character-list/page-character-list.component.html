@@ -1,0 +1,12 @@
+<section class="p-4 container">
+    <ul class="list-group">
+      <li
+        *ngFor="let character of charactersList" class="list-group-item"
+      >
+      {{ character.id }} -
+      <img [src]="character.image"/>
+        {{ character.name }} -
+        {{ character.status }}
+      </li>
+    </ul>
+  </section>
